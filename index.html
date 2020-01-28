@@ -52,7 +52,68 @@
 
 			<div class="container">
 			<div style="width:75%;">
-			<p><div class="chartjs-wrapper"><canvas id="chartjs-1" class="chartjs" width="undefined" height="undefined"></canvas><script>new Chart(document.getElementById("chartjs-1"),{"type":"line","data":{"labels":["August","September","October","November","December","January","February","March"],"datasets":[{"label":"Kieran","data":[0,18,49.75,59,42,40.75,51.5,68.625],"fill":false,"borderColor":"rgb(75, 192, 192)", "borderDash": [5, 5],"lineTension":0.1}, {"label":"Patrick","data":[0,46,71.75,64,88,56.75,68.5,55.625],"fill":false,"borderColor":"rgb(231, 28, 62)","borderDash": [5, 5],"lineTension":0.1, "hidden": true}, {"label":"Joe","data":[0,32,22.75,4,48,95.75,81.5,62.625],"fill":false,"borderColor":"rgb(31, 128, 192)","borderDash": [5, 5],"lineTension":0.1, "hidden": true}, {"label":"Tom","data":[0,-48,-82.25,-100,-112,-126.25,-164.5,-167.375],"fill":false,"borderColor":"rgb(131, 128, 92)","borderDash": [5, 5],"lineTension":0.1, "hidden": true}, {"label":"Sam","data":[0,-31,-42.25,-30,-40,-25.25,-35.5,-13.375],"fill":false,"borderColor":"rgb(213, 28, 192)","borderDash": [5, 5],"lineTension":0.1, "hidden": true},{"label":"Elliot","data":[0,-34,-26.25,-13,-14,0.75,-1.5,7.625],"fill":false,"borderColor":"rgb(78, 99, 192)","borderDash": [5, 5],"lineTension":0.1, "hidden": true}, {"label":"Olly","data":[0,16,24.75,-3,23,20.75,37.5,27.625],"fill":false,"borderColor":"rgb(44, 101, 21)","borderDash": [5, 5],"lineTension":0.1, "hidden": true}, {"label":"Barney","data":[0,1,-18.25,19,-35,-63.25,-37.5,-41.375],"fill":false,"borderColor":"rgb(48, 7, 47)","borderDash": [5, 5],"lineTension":0.1, "hidden": true},{"label":"xKieran","data":[0,21.75,73,85.5,69.875,78.125,98,138.75],"fill":false,"borderColor":"rgb(75, 192, 192)","lineTension":0.1}, {"label":"xPatrick","data":[0,58.75,82,73.5,92.875,75.125,76,71.375],"fill":false,"borderColor":"rgb(231, 28, 62)","lineTension":0.1, "hidden": true}, {"label":"xJoe","data":[0,37.75,31,15.5,47.875,100.125,78,54.375],"fill":false,"borderColor":"rgb(31, 128, 192)","lineTension":0.1, "hidden": true}, {"label":"xTom","data":[0,-53.25,-91,-122.5,-139.125,-140.875,-184,-194.625],"fill":false,"borderColor":"rgb(131, 128, 92)","lineTension":0.1, "hidden": true}, {"label":"xSam","data":[0,-30.25,-14,-3.5,-6.125,2.125,-2,28.375],"fill":false,"borderColor":"rgb(213, 28, 192)","lineTension":0.1, "hidden": true}, {"label":"xElliot","data":[0,-41.25,-45,-25.5,-24.125,12.125,16,24.375],"fill":false,"borderColor":"rgb(78, 99, 192)","lineTension":0.1, "hidden": true}, {"label":"xOlly","data":[0,4.75,-2,-31.5,6.875,-13.875,6,-17.625],"fill":false,"borderColor":"rgb(44, 101, 21)","lineTension":0.1, "hidden": true}, {"label":"xBarney","data":[0,1.75,-34,8.5,-48.125,-112.875,-88,-104.625],"fill":false,"borderColor":"rgb(48, 7, 47)","lineTension":0.1, "hidden": true} ]},"options":{}});</script></div></p>
+			<p><div class="chartjs-wrapper"><canvas id="chartjs-1" class="chartjs" width="undefined" height="undefined"></canvas><script>new Chart(document.getElementById("chartjs-1"),{"type":"bubble","data":{
+      labels: "Africa",
+      datasets: [
+        {
+          label: ["China"],
+          backgroundColor: "rgba(255,221,50,0.2)",
+          borderColor: "rgba(255,221,50,1)",
+          data: [{
+            x: 21269017,
+            y: 5.245,
+            r: 15
+          }]
+        }, {
+          label: ["Denmark"],
+          backgroundColor: "rgba(60,186,159,0.2)",
+          borderColor: "rgba(60,186,159,1)",
+          data: [{
+            x: 258702,
+            y: 7.526,
+            r: 10
+          }]
+        }, {
+          label: ["Germany"],
+          backgroundColor: "rgba(0,0,0,0.2)",
+          borderColor: "#000",
+          data: [{
+            x: 3979083,
+            y: 6.994,
+            r: 15
+          }]
+        }, {
+          label: ["Japan"],
+          backgroundColor: "rgba(193,46,12,0.2)",
+          borderColor: "rgba(193,46,12,1)",
+          data: [{
+            x: 4931877,
+            y: 5.921,
+            r: 15
+          }]
+        }
+      ]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Predicted world population (millions) in 2050'
+      }, scales: {
+        yAxes: [{ 
+          scaleLabel: {
+            display: true,
+            labelString: "Happiness"
+          }
+        }],
+        xAxes: [{ 
+          scaleLabel: {
+            display: true,
+            labelString: "GDP (PPP)"
+          }
+        }]
+      }
+    }
+})</script></div></p>
 			</div>
 			
 	</div>
